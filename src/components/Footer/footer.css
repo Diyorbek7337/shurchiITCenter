@@ -1,0 +1,124 @@
+.footer {
+    background-color: #07db07;
+    padding: 50px 0;
+    box-sizing: border-box; 
+    font-family: "Lato";
+    font-style: normal;
+}
+.footer-wrapper {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 20px;
+    /* flex-wrap: wrap; */
+}
+.footerLogo {
+    width: 40%;
+    margin-bottom: 20px;
+}
+.footerLogo img {
+    width: 100%;
+}
+.footerItem {
+    width: 100%;
+    color: white;
+}
+.footerInfo {
+    color: white;
+    font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+}
+.footerItem .menu {
+    flex-direction: column;
+    gap: 15px;
+}
+.footerItem .menu a,li {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 13px;
+    color: white;
+}
+.footerItem .menu li{
+    display: flex;
+    align-items: center;
+}
+.footerItem .menu li .footerRight {
+    margin-left: 0;
+    transition: all 0.3s;
+}
+.footerItem .menu li:hover .footerRight{
+    margin-left: 10px;
+    transition: all 0.3s;
+}
+.footerItem .location {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 33px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+}
+.mail, .tel {
+    color: white ;
+}
+.mail:hover, .tel:hover {
+    color: rgb(4, 139, 243);
+}
+.icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    font-size: 22px;
+}
+.instagram {
+    color: #d6249f;
+}
+.telegram {
+    color: #229ED9;
+}
+.facebook {
+    color: #3b5998;
+}
+.icon {
+    transition: all 0.3s;
+}
+.icon:hover {
+    transform: scale(1.5);
+    transition: all 0.3s;
+}
+
+@media (max-width: 1200px) {
+    .footer-wrapper {
+        grid-template-columns: 50% 50%;
+    }
+    .footerItem {
+        margin-bottom: 30px;
+    }
+    .footerItem .menu{
+        display: flex;
+    }
+}
+@media (max-width: 600px) {
+    .footerInfo p {
+        font-size: 16px;
+    }
+    .footerItem .menu li a {
+        font-size: 16px;
+    }
+    .footerItem .menu li {
+        font-size: 16px;
+    }
+    .mail ,.tel {
+        font-size: 16px;
+    }
+}
+@media (max-width: 400px) {
+    .footer-wrapper {
+        grid-template-columns: 80%;
+        margin: 0 auto;
+    }
+    .footerItem .menu {
+        padding: 0;
+    }
+}

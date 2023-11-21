@@ -1,0 +1,175 @@
+.changing {
+  background-color: #f3faf1;
+  border-bottom: 0.5px solid #1e7836;
+  border-top: 1px solid #1e7836;
+}
+.changing-wrapper {
+  display: flex;
+  font-family: "Lato";
+  font-style: normal;
+  padding: 100px 0;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  box-sizing: border-box;
+}
+.changeVideo {
+  width: 40%;
+  
+}
+.changeVideo img {
+  width: 100%;
+  border-radius: 10px;
+  
+}
+.changeVideo .swiper {
+  padding:  0 !important;
+}
+.changeInfo h2 {
+  letter-spacing: -0.01em;
+  color: #101130;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  margin-bottom: 50px;
+}
+.changeInfo p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #606176;
+  margin-bottom: 50px;
+  width: 80%;
+}
+.btn {
+  display: inline-block;
+  background: #20b486;
+  border-radius: 16px;
+  width: 150px;
+  height: 50px;
+  padding: 15px 30px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  /* identical to box height */
+  position: relative;
+  letter-spacing: -0.01em;
+  overflow: hidden;
+  color: #fef4f1;
+}
+.btn span {
+    transition: top 0.5s;
+}
+.btn-text-one {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  .btn-text-two {
+    position: absolute;
+    width: 100%;
+    top: 150%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  .btn:hover .btn-text-one {
+    top: -100%;
+  }
+  
+  .btn:hover .btn-text-two {
+    top: 50%;
+  }
+
+  .swiper {
+    width: 100% !important;
+    padding: 50px 0  !important;
+}
+.swiper-slide .teamItem {
+    width: 100% !important;
+}
+  @media (max-width: 1320px) {
+    .changeInfo h2 {
+        font-size: 44px;
+    }
+  }
+  @media (max-width: 1246px) {
+    .changeInfo h2 {
+        font-size: 40px;
+    }
+    .changeInfo p {
+        width: 90%;
+    }
+  }
+  @media (max-width: 1226px) {
+    .changeInfo h2 {
+        font-size: 38px;
+        margin-bottom: 30px;
+    }
+    .changeInfo p {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .changeVideo {
+        width: 100%;
+    }
+    .changeVideo img {
+        width: 100%;
+    }
+  }
+  @media(max-width: 1015px) {
+    .changeInfo {
+        width: 100%;
+    }
+    .changeInfo h2 {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+    .changeInfo p {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+  }
+  @media (max-width: 996px){
+    .changing-wrapper {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-bottom: 100px;
+    }
+    .changeInfo p {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+  }
+  @media (max-width: 600px) {
+    .changeInfo h2 {
+        font-size: 32px;
+    }
+  }
+  @media (max-width: 600px) {
+    .changeInfo h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+  }
+  @media (max-width: 375px) {
+    .changeInfo h2 {
+        font-size: 26px;
+        line-height: 40px;
+    }
+  }
+  @media (max-width: 317px) {
+    .changeInfo h2 {
+        font-size: 22px;
+        line-height: 40px;
+    }
+    .changeInfo p {
+        font-size: 16px;
+    }
+    .changeInfo a {
+        font-size: 16px;
+        height: 40px;
+    }
+  }
